@@ -17,15 +17,15 @@ El objetivo es validar la funcionalidad de la aplicación demo de SauceLabs (And
 
 ## 📂 Estructura del proyecto
 src
-└── test
-├── java
-│   ├── glue/               # Step Definitions (Given, When, Then)
-│   ├── hooks/              # Hooks de Cucumber (Before, After, Screenshots)
-│   ├── step/               # Lógica de negocio (acciones sobre la app)
-│   ├── view/               # Page Objects (ProductsView, etc.)
-│   └── runner/             # TestRunner de Cucumber/JUnit
-└── resources
-└── features/           # Archivos .feature con escenarios en Gherkin
+  test
+  java
+    glue/               # Step Definitions (Given, When, Then)
+    hooks/              # Hooks de Cucumber (Before, After, Screenshots)
+    step/               # Lógica de negocio (acciones sobre la app)
+    view/               # Page Objects (ProductsView, etc.)
+    runner/             # TestRunner de Cucumber/JUnit
+    resources
+    features/           # Archivos .feature con escenarios en Gherkin
 
 Código
 
@@ -39,7 +39,7 @@ Código
 5. Clonar este repositorio:
    ```bash
    git clone https://github.com/Daianatk/automatizacionMobile.git
-   cd <nombre-repo>
+   
 
 📊 Reportes
 Al finalizar la ejecución, se generan reportes en:
