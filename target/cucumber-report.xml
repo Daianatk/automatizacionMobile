@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="80.777" tests="4" skipped="0" failures="2" errors="0">
+<testcase classname="Funcionalidad del carrito de compras" name="Agregar productos al carrito - Example #1.1" time="23.169">
+<system-out><![CDATA[
+Given estoy en la aplicación de SauceLabs...................................passed
+And valido que carguen correctamente los productos en la galeria............passed
+When agrego 1 del siguiente producto "Sauce Labs Backpack"..................passed
+Then valido el carrito de compra actualice correctamente para "Sauce Labs Backpack" con 1 unidades.passed
+]]></system-out>
+</testcase>
+<testcase classname="Funcionalidad del carrito de compras" name="Agregar productos al carrito - Example #1.2" time="22.593">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2d1433be-dbde-4b9f-a891-2dfe65897271, getElementText {id=00000000-0000-02e5-ffff-ffff000000b4}]
+Capabilities {appium:app: C:\Users\Daiana\Downloads\m..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Daiana\Downloads\m..., appActivity: com.saucelabs.mydemoapp.and..., appPackage: com.saucelabs.mydemoapp.and..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (2d1433be-dbde-4b9f-a891-2dfe65897271)] -&gt; id: com.saucelabs.mydemoapp.android:id/cartTV]
+Session ID: 2d1433be-dbde-4b9f-a891-2dfe65897271">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [2d1433be-dbde-4b9f-a891-2dfe65897271, getElementText {id=00000000-0000-02e5-ffff-ffff000000b4}]
+Capabilities {appium:app: C:\Users\Daiana\Downloads\m..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Daiana\Downloads\m..., appActivity: com.saucelabs.mydemoapp.and..., appPackage: com.saucelabs.mydemoapp.and..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:viewportRect: {height: 2145, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (2d1433be-dbde-4b9f-a891-2dfe65897271)] -> id: com.saucelabs.mydemoapp.android:id/cartTV]
+Session ID: 2d1433be-dbde-4b9f-a891-2dfe65897271
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at view.ProductsView.isProductQuantityCorrect(ProductsView.java:74)
+	at glue.ProductStepDefinition.valido_carrito_actualizado_para_producto(ProductStepDefinition.java:47)
+	at ✽.valido el carrito de compra actualice correctamente para "Sauce Labs Bolt T-Shirt" con 1 unidades(file:///C:/Users/Daiana/Downloads/mobile/testmobile2/src/test/resources/features/cart_functionality.feature:12)
+]]>
+</failure>
+<system-out><![CDATA[
+Given estoy en la aplicación de SauceLabs...................................passed
+And valido que carguen correctamente los productos en la galeria............passed
+When agrego 1 del siguiente producto "Sauce Labs Bolt T-Shirt"..............passed
+Then valido el carrito de compra actualice correctamente para "Sauce Labs Bolt T-Shirt" con 1 unidades.failed
+]]></system-out>
+</testcase>
+<testcase classname="Funcionalidad del carrito de compras" name="Agregar productos al carrito - Example #1.3" time="24.128">
+<system-out><![CDATA[
+Given estoy en la aplicación de SauceLabs...................................passed
+And valido que carguen correctamente los productos en la galeria............passed
+When agrego 2 del siguiente producto "Sauce Labs Fleece Jacket".............passed
+Then valido el carrito de compra actualice correctamente para "Sauce Labs Fleece Jacket" con 2 unidades.passed
+]]></system-out>
+</testcase>
+<testcase classname="Tap first product" name="User adds first product to cart and verifies it" time="10.442">
+<failure/>
+<system-out><![CDATA[
+Given the user is on the products screen....................................undefined
+When the user taps on the first product.....................................skipped
+And the user taps on "Add to cart"..........................................skipped
+And the user opens the cart.................................................skipped
+Then the product "Sauce Labs Backpack" should be visible in "My Cart".......skipped
+]]></system-out>
+</testcase>
+</testsuite>
