@@ -11,35 +11,8 @@ El objetivo es validar la funcionalidad de la aplicación demo de SauceLabs (And
 - **Selenium 4.8.3**
 - **Cucumber 7.15.0**
 - **JUnit 4.13.2**
-- **Maven** para la gestión de dependencias
+- **Maven**
 
----
-
-## 📂 Estructura del proyecto
-src
-  test
-  java
-    glue/               # Step Definitions (Given, When, Then)
-    hooks/              # Hooks de Cucumber (Before, After, Screenshots)
-    step/               # Lógica de negocio (acciones sobre la app)
-    view/               # Page Objects (ProductsView, etc.)
-    runner/             # TestRunner de Cucumber/JUnit
-    resources
-    features/           # Archivos .feature con escenarios en Gherkin
-
-Código
-
----
-
-## 🛠️ Configuración
-1. Instalar **Java JDK 25** y configurar `JAVA_HOME`.
-2. Instalar **Maven** y validar con `mvn -v`.
-3. Instalar **Appium Server** y asegurarse de que esté corriendo.
-4. Configurar un **emulador Android** (ej. `emulator-5554`).
-5. Clonar este repositorio:
-   ```bash
-   git clone https://github.com/Daianatk/automatizacionMobile.git
-   
 
 📊 Reportes
 Al finalizar la ejecución, se generan reportes en:
